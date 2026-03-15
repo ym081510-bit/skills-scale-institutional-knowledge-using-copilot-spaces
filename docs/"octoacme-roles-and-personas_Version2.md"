@@ -1,0 +1,354 @@
+# OctoAcme Personas & Roles
+
+This document defines typical roles and responsibilities used in OctoAcme project management. Each role includes a summary, key responsibilities, goals, and typical interactions with other roles.
+
+---
+
+## Core Delivery Roles
+
+### Developers
+
+#### Role Summary
+Developers design, build, test, and deliver software components. They collaborate with product and project leads to implement features that meet acceptance criteria and quality standards.
+
+#### Responsibilities
+- Implement features and fixes to meet acceptance criteria
+- Write and maintain tests and documentation
+- Participate in design and code reviews
+- Assist in estimating and planning work
+- Help identify technical risks and propose mitigations
+- Collaborate with QA and DevOps on deployment readiness
+
+#### Goals
+- Deliver reliable, maintainable code
+- Reduce cycle time from idea to production
+- Maintain high test coverage and observability
+
+#### Key Interactions
+- **With Product Managers**: Refinement, acceptance criteria clarification
+- **With Project Managers**: Status reporting, risk escalation
+- **With QA/Testing**: Test planning, bug triage, release validation
+- **With DevOps Engineers**: Deployment coordination, infrastructure feedback
+- **With UX Designers**: Implementation feasibility, design collaboration
+
+#### Typical Communication
+- Daily standups and sprint planning
+- PR descriptions and code review comments
+- Technical design docs when needed
+
+---
+
+### Product Managers
+
+#### Role Summary
+Product Managers define what should be built to deliver customer and business value. They own the product vision, prioritize the backlog, measure outcomes, and advocate for user needs.
+
+#### Responsibilities
+- Define problem statements and success metrics
+- Prioritize the roadmap and backlog
+- Collaborate with stakeholders and engineering on trade-offs
+- Validate solutions through user research and metrics
+- Own the product vision and user experience outcomes
+- Make final go/no-go decisions on features (in collaboration with Sponsor)
+
+#### Goals
+- Maximize customer value and impact
+- Make clear, data-driven prioritization decisions
+- Ensure product-market fit and usability
+
+#### Key Interactions
+- **With Developers**: Refinement, acceptance criteria, trade-off discussions
+- **With Project Managers**: Timeline alignment, capacity planning
+- **With Stakeholders**: Vision alignment, feedback incorporation
+- **With UX Designers**: User research, design direction, usability validation
+- **With Data Analysts**: Metrics definition, success measurement
+- **With Scrum Masters**: Backlog prioritization, agile coaching feedback
+
+#### Typical Communication
+- Weekly alignment with PM and engineering leads
+- Roadmap updates and stakeholder briefings
+- Acceptance criteria and feature specs
+- Monthly review of success metrics and data analysis
+
+---
+
+### Project Managers
+
+#### Role Summary
+Project Managers coordinate delivery activities, manage schedules, risks, and communications. They enable the team to deliver on commitments efficiently and maintain stakeholder alignment.
+
+#### Responsibilities
+- Create and maintain project plans and timelines
+- Manage risks, dependencies, and resource constraints
+- Facilitate meetings (kickoff, planning, retrospectives)
+- Ensure consistent project documentation and status reporting
+- Coordinate cross-team and stakeholder communication
+- Track project health metrics and escalate issues
+- Identify and mitigate scheduling conflicts and blockers
+
+#### Goals
+- Deliver projects on time and within scope
+- Minimize unplanned work and escalations
+- Maintain transparency and alignment across stakeholders
+
+#### Key Interactions
+- **With Product Managers**: Timeline alignment, scope trade-offs
+- **With Developers**: Status tracking, risk identification, capacity planning
+- **With QA/Testing**: Test schedule coordination, release planning
+- **With DevOps Engineers**: Deployment scheduling, production readiness
+- **With Stakeholders**: Status updates, decision escalation
+- **With Scrum Masters**: Sprint health, process coaching
+
+#### Typical Communication
+- Weekly status updates and stakeholder reports
+- Risk registers and decision logs
+- Coordination via project boards and meeting facilitation
+- Ad-hoc escalation and risk mitigation discussions
+
+---
+
+## Specialized Delivery Roles
+
+### QA/Testing
+
+#### Role Summary
+QA/Testing professionals ensure product quality through test planning, validation, and quality assurance across the product lifecycle. They collaborate with developers and product teams to define and validate acceptance criteria.
+
+#### Responsibilities
+- Define test strategy and test plans aligned with acceptance criteria
+- Execute manual and automated tests
+- Identify, document, and triage bugs
+- Validate fixes and sign off on release readiness
+- Establish quality standards and metrics
+- Partner with developers on test automation approach
+- Review acceptance criteria for testability before development
+
+#### Goals
+- Ensure product quality meets customer expectations
+- Provide early feedback on quality and testability
+- Build confidence in releases through comprehensive testing
+- Reduce production incidents through rigorous QA
+
+#### Key Interactions
+- **With Developers**: Test planning, bug triage, test automation discussion
+- **With Product Managers**: Acceptance criteria validation, priority setting for bugs
+- **With Project Managers**: Test schedule coordination, release gates
+- **With DevOps Engineers**: Test environment provisioning, smoke test coordination
+- **With UX Designers**: Usability testing collaboration
+
+#### Typical Communication
+- Test plans and test case documentation
+- Bug reports and triage meetings
+- Release readiness sign-offs
+- Quality metrics and trend analysis
+
+---
+
+### UX Designer
+
+#### Role Summary
+UX Designers shape the user experience through research, wireframing, prototyping, and usability validation. They ensure products are intuitive, accessible, and meet user needs.
+
+#### Responsibilities
+- Conduct user research to understand needs and pain points
+- Create wireframes and prototypes for design validation
+- Iterate on designs based on user feedback
+- Collaborate with developers on implementation feasibility
+- Define interaction patterns and design systems
+- Review releases from an end-user perspective
+- Advocate for user needs in product and engineering decisions
+
+#### Goals
+- Deliver intuitive, accessible user experiences
+- Reduce user friction and increase adoption
+- Build a consistent, reusable design system
+
+#### Key Interactions
+- **With Product Managers**: Vision alignment, user research findings, prioritization
+- **With Developers**: Implementation feasibility, design system adoption, feedback
+- **With QA/Testing**: Usability testing, acceptance criteria clarity
+- **With Stakeholders**: Design validation, user feedback incorporation
+
+#### Typical Communication
+- Design mockups and prototypes
+- User research findings and insights
+- Design system documentation and guidelines
+- Feedback and iteration notes
+
+---
+
+### DevOps Engineer
+
+#### Role Summary
+DevOps Engineers ensure reliable, scalable deployment and automation of project infrastructure. They enable fast, safe releases and maintain production health.
+
+#### Responsibilities
+- Design and maintain CI/CD pipelines
+- Manage infrastructure, monitoring, and alerting
+- Implement automated testing and security scanning
+- Coordinate deployments and rollback procedures
+- Establish runbooks and incident response procedures
+- Collaborate with developers on deployment readiness
+- Optimize performance and reduce deployment risk
+
+#### Goals
+- Enable fast, reliable deployments
+- Minimize production incidents and downtime
+- Build operational excellence and observability
+
+#### Key Interactions
+- **With Developers**: Pipeline configuration, deployment coordination, infrastructure feedback
+- **With Project Managers**: Deployment scheduling, release readiness validation
+- **With QA/Testing**: Test environment provisioning, smoke test execution
+- **With Stakeholders**: Production status, incident communication
+
+#### Typical Communication
+- CI/CD pipeline configuration and documentation
+- Deployment procedures and release coordination
+- Incident alerts and post-mortems
+- Infrastructure health reports
+
+---
+
+### Data Analyst
+
+#### Role Summary
+Data Analysts provide project measurement, analytics, and actionable insights. They enable data-driven decision-making and measure product impact.
+
+#### Responsibilities
+- Define success metrics and KPIs with Product Managers
+- Instrument products for data collection
+- Analyze feature usage and performance data
+- Create dashboards and reports for stakeholders
+- Provide insights and recommendations based on data
+- Advise Product Managers on optimization opportunities
+- Validate business impact and ROI
+
+#### Goals
+- Enable data-driven product decisions
+- Measure and demonstrate product impact
+- Identify optimization opportunities through data analysis
+
+#### Key Interactions
+- **With Product Managers**: Metrics definition, insights, recommendations
+- **With Developers**: Data instrumentation, event tracking implementation
+- **With Stakeholders**: Dashboard sharing, business impact reporting
+- **With Project Managers**: Success metric tracking, milestone reviews
+
+#### Typical Communication
+- Dashboard and report creation
+- Data analysis findings and recommendations
+- Metrics definitions and tracking documentation
+- Stakeholder briefings on impact and performance
+
+---
+
+### Scrum Master / Agile Coach
+
+#### Role Summary
+Scrum Masters coach teams on agile practices, remove delivery obstacles, and facilitate continuous improvement. They ensure the team operates effectively within the agile framework.
+
+#### Responsibilities
+- Facilitate sprint ceremonies (planning, standups, retrospectives, reviews)
+- Help the team self-organize and make decisions
+- Remove blockers and impediments
+- Coach the team on agile principles and practices
+- Track team velocity and health metrics
+- Facilitate retrospectives and capture action items
+- Advocate for process improvements
+
+#### Goals
+- Enable high-performing, self-organizing teams
+- Reduce cycle time and improve delivery predictability
+- Foster a culture of continuous improvement
+
+#### Key Interactions
+- **With Project Managers**: Sprint planning, capacity coordination
+- **With Developers**: Daily standup facilitation, blocker resolution
+- **With Product Managers**: Backlog refinement, sprint goal alignment
+- **With Team**: Process coaching, retrospective facilitation
+
+#### Typical Communication
+- Sprint planning agendas and notes
+- Standup facilitation and blocker tracking
+- Retrospective notes and action items
+- Team health metrics and trends
+
+---
+
+## Stakeholder Roles
+
+### Sponsor / Executive Stakeholder
+
+#### Role Summary
+Sponsors provide business context, priority alignment, and decision authority. They ensure projects align with strategic goals and have necessary resources and support.
+
+#### Responsibilities
+- Provide business justification and strategic context
+- Make go/no-go decisions on major initiatives
+- Remove organizational blockers
+- Communicate project importance and priority to stakeholders
+- Review project health and escalations
+- Provide feedback on outcomes and ROI
+
+#### Goals
+- Ensure projects deliver business value
+- Align teams with strategic priorities
+- Support successful project delivery
+
+#### Key Interactions
+- **With Project Managers**: Status updates, escalations
+- **With Product Managers**: Strategic alignment, decision-making
+- **With Team**: Periodic reviews, celebration of success
+
+---
+
+### Cross-functional Stakeholders
+
+#### Role Summary
+Cross-functional stakeholders provide domain expertise, feedback, and alignment from their functional areas (e.g., Sales, Support, Marketing, Security, Legal).
+
+#### Responsibilities
+- Provide domain-specific requirements and constraints
+- Review deliverables for alignment with their domain
+- Communicate project impact to their teams
+- Escalate conflicts or concerns
+- Participate in reviews and feedback sessions
+
+#### Goals
+- Ensure cross-functional alignment
+- Reduce rework due to missed requirements
+- Smooth adoption and downstream impact
+
+#### Key Interactions
+- **With Product Managers**: Requirements gathering, feedback
+- **With Project Managers**: Status updates, milestone reviews
+- **With Delivery Team**: Acceptance criteria validation, design reviews
+
+---
+
+## How These Personas Are Used
+
+- **For Project Planning**: Use these definitions to assign roles to team members and clarify expectations.
+- **For Copilot Spaces Context**: Reference specific personas to ground Copilot guidance in role-specific workflows.
+- **For Onboarding**: Share these definitions with new team members to explain team structure and collaboration patterns.
+- **For Decision-Making**: Use role descriptions to identify decision authority and appropriate stakeholders for each decision.
+
+---
+
+## Interaction Matrix: Who Communicates with Whom
+
+| Role | Daily | Weekly | As-Needed |
+|------|-------|--------|-----------|
+| Developer ↔ Developer | Standups, PRs | Sprint planning | Design reviews |
+| Developer ↔ QA/Testing | Ongoing | Sprint review | Bug triage |
+| Developer ↔ DevOps | As-needed | - | Deployment coordination |
+| Developer ↔ Product Manager | Ongoing | Refinement | Clarifications |
+| Product Manager ↔ Project Manager | - | Alignment sync | Trade-offs |
+| Product Manager ↔ Data Analyst | - | Weekly | Metrics review |
+| Product Manager ↔ UX Designer | Ongoing | Design reviews | User research |
+| Project Manager ↔ Scrum Master | Daily | Sprint planning | Blocker resolution |
+| Project Manager ↔ Stakeholders | - | Status update | Escalations |
+| QA/Testing ↔ DevOps | As-needed | Release planning | Environment setup |
+
+---

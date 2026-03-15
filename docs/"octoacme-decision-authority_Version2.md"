@@ -1,0 +1,136 @@
+# OctoAcme Decision Authority & RACI Matrix
+
+## Purpose
+Clarify who makes which decisions at each stage of the project lifecycle to reduce delays and ambiguity.
+
+---
+
+## Decision Authority by Phase
+
+### Initiation Phase
+
+| Decision | Authority | Consulted | Informed |
+|----------|-----------|-----------|----------|
+| Approve project to move to planning | Sponsor + Product Lead | Project Manager, Team Lead | Stakeholders |
+| Define success metrics | Product Manager | Data Analyst, Team Lead | Sponsor, Stakeholders |
+| Identify initial risks | Project Manager | Developers, Product Manager | Team |
+| Approve initial timeline estimate | Project Manager | Developers | Sponsor |
+
+### Planning Phase
+
+| Decision | Authority | Consulted | Informed |
+|----------|-----------|-----------|----------|
+| Finalize scope and backlog | Product Manager | Developers, Project Manager | Team, Stakeholders |
+| Approve sprint/iteration length | Scrum Master + Team | Project Manager | Stakeholders |
+| Set Definition of Done | Team + QA/Testing | Project Manager | Stakeholders |
+| Approve release timeline | Project Manager | Product Manager, Developers | Sponsor, Stakeholders |
+| Prioritize backlog items | Product Manager | Developers, Stakeholders | Team |
+
+### Execution Phase
+
+| Decision | Authority | Consulted | Informed |
+|----------|-----------|-----------|----------|
+| Accept PR / merge to main | Developers (peer review) | QA/Testing, Project Manager | Team |
+| Sign off on feature acceptance | QA/Testing + Product Manager | Developers | Team |
+| Escalate blocker (Level 1) | Scrum Master + Team | Project Manager | - |
+| Escalate blocker (Level 2) | Project Manager + Product Manager | Team leads | Sponsor |
+| Change scope mid-sprint | Product Manager | Project Manager, Team | Sponsor, Stakeholders |
+
+### Release Phase
+
+| Decision | Authority | Consulted | Informed |
+|----------|-----------|-----------|----------|
+| Approve release readiness | DevOps + QA/Testing | Developers, Product Manager | Project Manager |
+| Schedule production deployment | Project Manager + DevOps | Product Manager, On-call | Stakeholders, Support |
+| Approve rollback | DevOps + Product Manager | Project Manager | Team, Stakeholders |
+| Release communication timing | Product Manager + Project Manager | Marketing, Support | Stakeholders, Customers |
+
+### Close & Retrospective Phase
+
+| Decision | Authority | Consulted | Informed |
+|----------|-----------|-----------|----------|
+| Schedule retrospective | Scrum Master | Project Manager, Team | Stakeholders |
+| Prioritize action items | Team + Scrum Master | Project Manager | Sponsor |
+| Capture lessons learned | Project Manager | Team | Organization |
+
+---
+
+## Escalation Path for Blockers
+
+### Level 1: Team Triage
+- **Decision Maker**: Team + Scrum Master
+- **Forum**: Daily standup
+- **Action**: Identify owner and mitigation
+- **Timeline**: Same day resolution attempt
+
+### Level 2: PM/PdM Escalation
+- **Decision Maker**: Project Manager + Product Manager
+- **Forum**: Dedicated blocker meeting or weekly sync
+- **Action**: Cross-team coordination, scope trade-offs, resource reallocation
+- **Timeline**: Within 24 hours
+
+### Level 3: Sponsor Escalation
+- **Decision Maker**: Sponsor + Product Lead
+- **Forum**: Executive briefing
+- **Action**: Business-level decisions, organizational support
+- **Timeline**: Within 48 hours
+
+---
+
+## Conflict Resolution
+
+### Technical Disagreement (e.g., architecture, approach)
+- **First**: Raise in design review or tech sync
+- **Second**: Escalate to Tech Lead or Architect if available
+- **Third**: PM/Sponsor provides business context to break tie
+
+### Priority / Scope Conflict
+- **First**: PM and team discuss trade-offs
+- **Second**: Escalate to Product Lead if cross-project impact
+- **Third**: Sponsor decides based on business strategy
+
+### Timeline / Resource Conflict
+- **First**: Project Manager coordinates with resource owners
+- **Second**: Escalate to managers of shared resources
+- **Third**: Sponsor allocates resources based on priority
+
+---
+
+## When to Involve Each Role in Decisions
+
+### Product Manager Should Decide
+- What to build (feature prioritization)
+- Success metrics and acceptance criteria
+- Trade-offs between features
+- User experience and design direction
+
+### Project Manager Should Decide
+- Timeline and schedule
+- Resource allocation and capacity
+- Process and meeting cadence
+- Communication and status reporting
+
+### Technical Lead / Developers Should Decide
+- How to build (architecture, technology)
+- Code quality standards
+- Testing and deployment approach
+- Technical risks and mitigation
+
+### Scrum Master Should Decide
+- Sprint length and iteration cadence
+- Ceremony timing and facilitation approach
+- Process improvements and retrospective topics
+
+### QA/Testing Should Decide
+- Test strategy and test coverage
+- Acceptance criteria testability
+- Release readiness criteria
+- Quality metrics and thresholds
+
+### DevOps Should Decide
+- Infrastructure and deployment approach
+- Monitoring and alerting strategy
+- Rollback procedures
+- Deployment windows and schedules
+
+---

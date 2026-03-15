@@ -1,0 +1,213 @@
+# OctoAcme Collaboration Workflows
+
+## Purpose
+Define standard workflows and handoff patterns for common project scenarios to ensure smooth collaboration between roles.
+
+---
+
+## Workflow 1: Feature Development Lifecycle
+
+### Phase 1: Ideation & Refinement (Product Manager + Developers)
+1. Product Manager writes feature brief with problem, goals, success metrics
+2. Product Manager + UX Designer conduct user research if needed
+3. Product Manager and Developers meet for refinement
+4. Developers raise technical feasibility concerns; PM adjusts scope if needed
+5. UX Designer shares prototype or wireframe (if applicable)
+6. Feature is added to backlog with clear acceptance criteria
+
+### Phase 2: Development (Developers + QA/Testing + Scrum Master)
+1. Feature is planned in sprint during sprint planning
+2. Developers create feature branch and begin implementation
+3. Developers and QA/Testing collaborate on test approach during sprint
+4. Developers create pull request with:
+   - Link to issue/story
+   - Description of changes
+   - Acceptance criteria checklist
+   - Screenshots/demo instructions if UI-related
+5. Peer review occurs; feedback is addressed
+6. QA/Testing tests feature in staging environment
+7. Feature is merged to main branch
+
+### Phase 3: Acceptance & Release (Product Manager + QA/Testing + DevOps)
+1. QA/Testing provides acceptance sign-off
+2. Product Manager validates feature meets acceptance criteria (may do final QA)
+3. Product Manager and DevOps coordinate release timing
+4. DevOps deploys to production and verifies deployment
+5. DevOps notifies Product Manager of successful deployment
+6. Product Manager communicates release to stakeholders
+
+### Phase 4: Post-Release (Product Manager + Data Analyst)
+1. Data Analyst confirms success metrics are tracking correctly
+2. Product Manager reviews early metrics and gathers user feedback
+3. Product Manager logs issues for follow-up work
+4. Action items are added to backlog for next iteration
+
+---
+
+## Workflow 2: Risk Escalation
+
+### Step 1: Identify Risk (Any team member)
+- Risk is identified during standups, planning, or execution
+- Risk is described in Risk Register with:
+  - ID, description, impact, likelihood, owner, mitigation
+
+### Step 2: Level 1 Triage (Scrum Master + Team)
+- Discussed in daily standup
+- Team proposes mitigation or owner identifies next steps
+- If mitigatable by team, owner takes action and updates status
+- If requires external support, escalate to Level 2
+
+### Step 3: Level 2 Escalation (Project Manager + Product Manager)
+- Project Manager convenes dedicated blocker meeting
+- Team, PM, and PdM discuss options:
+  - Can scope be reduced to avoid risk?
+  - Can timeline be adjusted?
+  - Can resources be reallocated?
+- Decision is communicated to team and Sponsor
+- If still unresolved, escalate to Level 3
+
+### Step 4: Level 3 Escalation (Sponsor)
+- Sponsor is briefed on business impact
+- Sponsor makes strategic decision on project continuation or adjustment
+- Decision is communicated to team and stakeholders
+
+---
+
+## Workflow 3: Release Coordination
+
+### 2 Weeks Before Release
+
+1. **Product Manager** + **Developers** review feature completeness
+2. **QA/Testing** confirms test plan for release
+3. **DevOps** reviews deployment checklist and runbook
+4. **Project Manager** confirms all blockers are cleared
+5. **Product Manager** drafts release notes
+
+### 1 Week Before Release
+
+1. **QA/Testing** executes full regression test suite in staging
+2. **Developers** fix any critical bugs found
+3. **DevOps** conducts pre-deployment verification
+4. **Product Manager** finalizes release communication (emails, announcements, etc.)
+5. **Scrum Master** removes any remaining blockers
+
+### Day Before Release
+
+1. **DevOps** confirms deployment window and coordinates with on-call
+2. **QA/Testing** executes smoke test in staging
+3. **Project Manager** sends reminder to stakeholders
+4. **Product Manager** prepares release announcement
+
+### Release Day
+
+1. **DevOps** executes deployment following runbook
+2. **DevOps** confirms deployment metrics and system health
+3. **QA/Testing** executes smoke tests in production
+4. **DevOps** notifies Product Manager of successful release
+5. **Product Manager** sends release announcement to stakeholders
+6. **Product Manager** confirms with Support team on new features
+
+### Post-Release
+
+1. **DevOps** monitors metrics and alerts for 24–48 hours
+2. **Data Analyst** confirms success metrics are tracking
+3. **Product Manager** gathers early user feedback
+4. **Team** conducts retro on release process
+
+---
+
+## Workflow 4: Dependency Management
+
+### During Planning
+
+1. **Project Manager** identifies all external dependencies
+2. **Project Manager** maps dependencies to timeline
+3. **Product Manager** validates dependency alignment with other projects
+4. **Project Manager** reaches out to dependency owners to confirm timelines
+5. Dependencies are documented in project board with clear owners and dates
+
+### During Execution
+
+1. **Project Manager** tracks dependency health weekly
+2. **Project Manager** flags any dependencies at risk in status updates
+3. **Project Manager** escalates to Product Manager if dependency is slipping
+4. **Product Manager** coordinates with other project leads as needed
+5. If dependency fails, **Project Manager** invokes contingency plan
+
+### Risk Mitigation
+
+- Build buffer time into schedule for dependencies
+- Identify alternative paths or workarounds
+- Have contingency plan documented (e.g., proceed with reduced scope)
+
+---
+
+## Workflow 5: Retrospective & Continuous Improvement
+
+### Scheduling
+
+1. **Scrum Master** schedules retrospective within 1 week of sprint/release end
+2. **Scrum Master** invites full team: Developers, QA/Testing, Product Manager, Project Manager, others as appropriate
+3. **Project Manager** ensures blockers/action items from previous retro are discussed
+
+### Facilitation
+
+1. **Scrum Master** sets the stage (review agenda, psychological safety)
+2. Team discusses: **What went well?**, **What could improve?**, **Action items?**
+3. **Scrum Master** captures ideas and clusters into themes
+4. Team votes on top 2–3 action items to prevent overload
+5. Each action item is assigned: **Owner, Due Date, Success Criteria**
+
+### Follow-up
+
+1. **Scrum Master** documents action items in repo (wiki, project board, or issue tracker)
+2. **Project Manager** includes retro action items in status tracking
+3. **Scrum Master** reviews progress on action items in next retro
+4. **Team** celebrates completed action items and impact
+
+---
+
+## Workflow 6: Cross-functional Collaboration (Design & Development)
+
+### Phase 1: Design Discovery (UX Designer + Product Manager)
+1. UX Designer conducts user research or reviews existing insights
+2. UX Designer creates wireframes or mockups
+3. UX Designer shares with Product Manager for feedback
+4. UX Designer iterates based on feedback
+
+### Phase 2: Design Validation (UX Designer + Developers)
+1. UX Designer shares design with Developers for feasibility review
+2. Developers identify technical constraints or opportunities
+3. UX Designer and Developers discuss trade-offs
+4. Design is finalized with input from both parties
+
+### Phase 3: Implementation (Developers + UX Designer)
+1. Developers implement design following design system
+2. Developers share implementation screenshots with UX Designer
+3. UX Designer validates pixel-perfect adherence if needed, or provides feedback on interaction
+4. UX Designer approves implementation
+
+### Phase 4: QA & Testing (QA/Testing + UX Designer)
+1. QA/Testing executes test plan including usability checks
+2. QA/Testing flags any usability issues or design deviations
+3. UX Designer reviews issues and prioritizes fixes
+4. Developers fix high-priority issues; lower-priority issues go to backlog
+
+---
+
+## Communication Checkpoints Across Workflows
+
+| Checkpoint | Who | When | Format |
+|------------|-----|------|--------|
+| Refinement | PM, Dev, Tech Lead | Before sprint | Slack + meeting notes |
+| Sprint Planning | Entire team | Week start | Meeting + Jira/board update |
+| Daily Standup | Entire team | Daily | 15-min sync |
+| Mid-sprint Check-in | PM, Tech Lead, Scrum Master | Mid-sprint | Async update + optional sync |
+| Sprint Review / Demo | Team + Stakeholders | Sprint end | Meeting + recording |
+| Retrospective | Team | Sprint end + 1 week | Meeting + action items |
+| Status Update | PM + Stakeholders | Weekly | Email or dashboard |
+| Risk Review | PM, Project Manager, Team Leads | Weekly | Meeting or async |
+| Release Planning | PM, Dev, QA, DevOps, Project Manager | 2 weeks pre-release | Kick-off meeting |
+| Release Coordination | Project Manager, DevOps, QA, Product Manager | Release day | Real-time Slack |
+
+---
